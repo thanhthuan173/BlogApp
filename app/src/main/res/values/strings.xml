@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Blog App</string>
+    <string name="default_web_client_id">14162405232-uct17mcairpru1rjt8uivf1ttsl0790p.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
