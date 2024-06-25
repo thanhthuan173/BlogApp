@@ -34,6 +34,7 @@ android {
 }
 
 dependencies {
+    implementation ("com.karumi:dexter:6.2.3")
     implementation ("com.theartofdev.edmodo:android-image-cropper:2.8.0")
     api ("com.theartofdev.edmodo:android-image-cropper:2.8.+")
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))

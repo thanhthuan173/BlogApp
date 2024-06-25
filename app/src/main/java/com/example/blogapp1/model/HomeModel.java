@@ -2,20 +2,21 @@ package com.example.blogapp1.model;
 
 public class HomeModel {
 
-    private String userName, timestamp,profileImage,postImage, uid;
+    private String userName, timestamp,profileImage,postImage, uid,comments,description;
 
     private int likeCount;
 
     public HomeModel() {
-
     }
 
-    public HomeModel(String userName, String timestamp, String profileImage, String postImage, String uid, int likeCount) {
+    public HomeModel(String userName, String timestamp, String profileImage, String postImage, String uid, String comments, String description, int likeCount) {
         this.userName = userName;
         this.timestamp = timestamp;
         this.profileImage = profileImage;
         this.postImage = postImage;
         this.uid = uid;
+        this.comments = comments;
+        this.description = description;
         this.likeCount = likeCount;
     }
 
@@ -57,6 +58,22 @@ public class HomeModel {
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getLikeCount() {
