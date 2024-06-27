@@ -34,27 +34,34 @@ android {
 }
 
 dependencies {
-    implementation ("com.karumi:dexter:6.2.3")
-    implementation ("com.theartofdev.edmodo:android-image-cropper:2.8.0")
-    api ("com.theartofdev.edmodo:android-image-cropper:2.8.+")
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-storage")
+
+    // Firebase UI libraries
+    implementation("com.firebaseui:firebase-ui-storage:8.0.2")
+    implementation("com.firebaseui:firebase-ui-database:8.0.2")
+    implementation("com.firebaseui:firebase-ui-auth:8.0.2")
+    implementation("com.firebaseui:firebase-ui-firestore:8.0.2")
+
+    // Other dependencies
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("com.google.android.material:material:1.12.0")
     implementation("com.google.android.gms:play-services-auth:21.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-
     implementation("com.github.bumptech.glide:glide:4.11.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.11.0")
-
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
-    implementation("com.google.firebase:firebase-auth:23.0.0")
-    implementation("com.google.firebase:firebase-firestore:25.0.0")
-    implementation("com.google.firebase:firebase-storage:21.0.0")
+    implementation ("com.karumi:dexter:6.2.3")
+    implementation ("com.theartofdev.edmodo:android-image-cropper:2.8.0")
+    api ("com.theartofdev.edmodo:android-image-cropper:2.8.0")
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

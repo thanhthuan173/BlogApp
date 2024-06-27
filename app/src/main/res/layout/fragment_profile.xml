@@ -58,14 +58,17 @@
             android:layout_width="match_parent"
             android:layout_height="100dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/profileImage"
-            app:civ_border_color="#76D1FA"
-            app:civ_border_width="1dp"
-            android:src="@drawable/ic_person"
-            android:layout_margin="14dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/ic_person"
+                app:civ_border_color="#76D1FA"
+                app:civ_border_width="1dp" />
 
         <ImageButton
             android:layout_width="34dp"
@@ -231,11 +234,11 @@
             tools:ignore="NotSibling" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/recyclerView"
-            android:layout_below="@id/view"/>
-
+            android:layout_below="@id/view"
+            android:layout_marginTop="65dp" />
 
 
     </RelativeLayout>
